@@ -1,0 +1,23 @@
+#register_body {
+    display: grid;
+    grid-template-rows:10% 90%;
+}
+
+main {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.hotel_options > p {
+    text-align: center;
+    font-size: large;
+}
+
+#register_header {
+    border: 5px solid;
+    text-align: center;
+}
+
+
+/* CSS for date */

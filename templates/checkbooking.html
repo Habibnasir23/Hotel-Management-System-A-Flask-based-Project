@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Check Booking</title>
+</head>
+<body>
+<style>
+table.booking_table {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #ffcc00;
+  border-style: solid;
+  color: #000000;
+}
+
+table.booking_table td, table.booking_table th {
+  border-width: 2px;
+  border-color: #ffcc00;
+  border-style: solid;
+  padding: 3px;
+}
+
+table.booking_table thead {
+  background-color: #ffcc00;
+}
+</style>
+    <table class="booking_table">
+      <thead>
+        <tr>
+          <th>Customer Name</th>
+          <th>EMAIL</th>
+          <th>HOTEL NAME</th>
+          <th>ROOM TYPE</th>
+          <th>ROOM ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>{{ c_name }}</td>
+          <td>{{ email }}</td>
+          <td>{{ hotel }}</td>
+          <td>{{ r_type }}</td>
+          <td>{{ rm_id }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="/"><button>GO HOME</button></a>
+
+
+</body>
+</html>

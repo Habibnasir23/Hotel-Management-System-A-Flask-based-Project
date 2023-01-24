@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css') }}">
+</head>
+<body>
+    <form action="#" method="post">
+        <div class="room_selection">
+            <h3>Pick Room</h3>
+            <label for="Quad">Quad Room</label>
+            <input type=radio id="Quad" name="ROOM_TYPE" value="Quad">
+            <img src="../static/Quad%20Room.png" height="150" width="300">
+            <p>Number of rooms left <span id="rooms left">{{ rooms_quad }}</span></p>
+        </div>
+
+        <div class="room_selection">
+            <h3>Pick Room</h3>
+            <label for="Double">Double Room</label>
+            <input type=radio id="Double" name="ROOM_TYPE" value="Double">
+            <img src="../static/Double%20Room.png" height="150" width="300">
+            <p>Number of rooms left <span id="rooms left">{{ rooms_double }}</span></p>
+        </div>
+
+        <div class="room_selection">
+            <h3>Pick Room</h3>
+            <label for="Presidential">Presidential Room</label>
+            <input type=radio id="Presidential" name="ROOM_TYPE" value="Presidential">
+            <img src="../static/Presidential%20suite.png" height="150" width="300">
+            <p>Number of rooms left <span id="rooms left">{{ rooms_pres }}</span></p>
+        </div>
+
+        <input type="submit" value="Book Room">
+    </form>
+
+
+
+
+
+</body>
+</html>

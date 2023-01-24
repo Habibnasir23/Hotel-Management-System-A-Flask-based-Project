@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Title</title>
+</head>
+<body>
+<main>
+   <div id="hotels_available">
+       <h1>Hilton</h1>
+       <img src="../static/Hilton.png" height="150" width="300">
+        <p>Rooms left:{{ h_room }}</p>
+
+       <h1>GoodTime</h1>
+       <img src="../static/GoodTime.png"height="150" width="300"s>
+       <p>Rooms left:{{ g_room }}</p>
+
+       <h1>Cambria</h1>
+       <img src="../static/Cambria.png" height="150" width="300">
+       <p>Rooms left:{{ c_room }}</p>
+
+
+       <h1>Villa Beach</h1>
+       <img src="../static/Villa%20beach.png" height="150" width="300">
+       <p>Rooms left:{{ v_room }}</p>
+
+   </div>
+
+   <br><br>
+   <div id="form-div">
+       <form action="#" method="POST">
+           <label for="chosen_hotel">Choose your hotel from the options:</label>
+           <input id="chosen_hotel" type="text" name="hotel">
+
+           <input type="submit" value="View Availability">
+       </form>
+   </div>
+
+    <div id="checkBooking">
+        <a href="/customer_check"><button>Check Booking</button></a>
+    </div>
+
+</main>
+</body>
+</html>
+
